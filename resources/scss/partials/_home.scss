@@ -45,3 +45,19 @@
         }
     }
 }
+
+.service{
+    background-color: blue;
+    padding: 20px 0;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        img{
+            max-width: 40px;
+        }
+    }
+}
