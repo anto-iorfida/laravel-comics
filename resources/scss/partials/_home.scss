@@ -1,5 +1,47 @@
 @use './variables' as *;
 
-section.hero{
-    background-image: url('jumbotron.jpg');
+.hero{
+    background-image: url('../img/jumbotron.jpg');
+    background-position: top;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.section-card-cinema{
+
+    background-color: #1c1c1c;
+    .container-card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    
+        .card{
+            width: calc(100% / 6 - 20px);
+            height: 20%;
+            margin: 10px;
+            &:hover {
+                        transform: scale(1.1); 
+                        transition: transform 0.3s ease-in-out; 
+                        cursor: pointer;
+                    }
+            .container-img-card{
+                height: 70%;
+                overflow: hidden;
+    
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    height: 190px;
+                }
+            }
+            
+            h4{
+                text-transform: uppercase;
+                color: lightgray;
+                margin-top: 10px;
+                font-size: small;
+                font-weight: 400;
+            }
+        }
+    }
 }
