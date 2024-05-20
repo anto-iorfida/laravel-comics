@@ -1,1 +1,61 @@
+@use './partials/variables' as *;
+@use './partials/header';
+@use './partials/home';
 // @import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito';
+}
+//-----------
+//  UTILITY
+//-----------
+.d-flex{
+    display: flex;
+}
+.between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.flex-mix{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.gap-20{
+    gap: 20px;
+}
+.h-100{
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-img{
+    max-height: 100%;
+    img{
+        height: 100%;
+    }
+}
+
+//-----------
+//  GENERAL
+//-----------
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
